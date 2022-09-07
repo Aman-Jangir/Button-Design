@@ -13,18 +13,24 @@
             font-size: 32px;
             color: aliceblue;
         }
+
+        input{
+            background-color: oldlace;
+            border: none;
+        }
     </style>
 
 </head>
 <body>
 
-    <input type="text" id="demo" size="15px" placeholder="0"><br><br><br>
+    <input type="text" id="demo" maxlength="5" size="15px" placeholder="0" ><br>
+    <input type="text" id="demo1" size="15px" placeholder="0" ><br><br>
 
     
     <button type="button"  id="i7" onclick="s7()">7</button>
-    <button type="button" onclick="s8()">8</button>
+    <button type="button" onclick="s8()" >8</button>
     <button type="button" onclick="s9()">9</button>
-    <button type="button"  style="background-color: red;">C</button><br><br>
+    <button type="button" onclick="sc()" style="background-color: red;">C</button><br><br>
     <button type="button" onclick="s4()">4</button>
     <button type="button" onclick="s5()">5</button>
     <button type="button" onclick="s6()">6</button>
@@ -35,20 +41,10 @@
     <button type="button" onclick="ss()" style="padding-left: 12px;padding-right: 12px;">-</button><br><br>
     <button type="button" onclick="so()">0</button>
     <button type="button" onclick="sd()" style="padding-left: 10px;padding-right: 10px;">.</button>
-    <button type="button" onclick="se()">=</button>
-    <button type="button" onclick="sa()" style="padding-left: 10px;">+</button>
+    <button type="button" onclick="ff()">=</button>
+    <button type="button" onclick="sa()" style="padding-left: 10px;" minlength="1">+</button>
 
-    
     <script src="index.js"> </script>
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>
