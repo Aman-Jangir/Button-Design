@@ -1,11 +1,43 @@
 
 
+// function ff(){
+
+//     var exp=document.getElementById("demo").value;
+//     var res=eval(exp);
+//     document.getElementById("demo").value= +res;
+// }
+
+
+
+
+
+
 function ff(){
 
     var exp=document.getElementById("demo").value;
-    var res=eval(exp);
-    // console.log(res);
-    document.getElementById("demo1").value="=" +res;
+    const last=exp.slice(-1);
+    if(last=="+"){
+        alert("Wrong Input")
+        document.getElementById("demo").value="";
+
+    }
+    else if(last=="-"){
+        alert("Wrong Input")
+        document.getElementById("demo").value="";
+    }
+    else if(last=="*"){
+        alert("Wrong Input")
+        document.getElementById("demo").value="";
+    }
+    else if(last=="."){
+        alert("Wrong Input")
+        document.getElementById("demo").value="";
+    }
+    else{
+        var res=eval(exp);
+    document.getElementById("demo").value= +res;
+    }
+    
 }
 
 
@@ -57,6 +89,7 @@ function sa() {
 }
 function ss() {
     document.getElementById("demo").value+= "-" ;
+    
 
 }
 
